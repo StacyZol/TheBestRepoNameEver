@@ -40,9 +40,8 @@ public class ActorBaseAdapter extends BaseAdapter {
         View v = view;
 
         if (view == null) {
-            LayoutInflater li = (LayoutInflater) MainActivity.class
-                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            v = li.inflate(R.layout.activity_main, null);
+            LayoutInflater li = LayoutInflater.from(view.getContext());
+            v = li.inflate(R.layout.list_item, null);
         }
 
         TextView name = (TextView) v.findViewById(R.id.actorName);
