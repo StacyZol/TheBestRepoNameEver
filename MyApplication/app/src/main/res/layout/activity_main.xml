@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ActorList"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -8,39 +9,11 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.stacyzolnikov.myapplication.MainActivity"
-    android:id="@+id/ActorList">
+    tools:context="com.example.stacyzolnikov.myapplication.MainActivity">
 
-
-    <TextView
+    <ListView
+        android:id="@+id/lv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Name:"
-        android:textSize="20dp"
-        android:id="@+id/actorName"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="DOB: "
-        android:textSize="20dp"
-        android:id="@+id/dob"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Oscars won: "
-        android:textSize="20dp"
-        android:id="@+id/oscarsWon"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Jordan SUCKS: "
-        android:textSize="20dp"
-        android:id="@+id/asdfaeg"
-        />
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#000"/>
+        android:layout_height="match_parent">
+    </ListView>
 </LinearLayout>
